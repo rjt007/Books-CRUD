@@ -1,0 +1,21 @@
+{
+  "name": "books-manager",
+  "version": "1.0.0",
+  "description": "Api for managing books",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Rajat Agrawal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}
