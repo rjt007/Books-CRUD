@@ -1,13 +1,28 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const booksRoute = require('./routes/books');
 
+//CORS Setting
+const CorsOptions = {
+    origin: '*',
+  
+    methods: [
+      'GET',
+      'POST',
+      'PUT',
+      'DELETE',
+      'PATCH'
+    ],
+  
+    allowedHeaders: [
+      'Content-Type', 'Authorization'
+    ],
+};
+  
+app.use(cors(CorsOptions));
 app.use(express.json());
-
-app.get('/',(req,res)=>{
-    res.status(200).json({request:'success'});
-});
 
 app.use('/api/books',booksRoute);
 
