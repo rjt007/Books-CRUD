@@ -1,6 +1,6 @@
 # Books CRUD API
-It is a basic CRUD API created using Node.js, Express and MongoDB to manage books.
-
+It is a basic CRUD API created using Node.js, Express and MongoDB to manage books.  
+This API is deployed on cloud hosting provider *Render*, To access the API use this the link [https://books-4z6s.onrender.com/](https://books-4z6s.onrender.com/).
 ## Endpoints
 ### Books
 
